@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarwithup">
+
+
+    <item
+        android:title="up"
+        android:id="@+id/search"
+        android:icon="@drawable/uparrow"
+        app:showAsAction="always"
+        />
+
+
+</menu>

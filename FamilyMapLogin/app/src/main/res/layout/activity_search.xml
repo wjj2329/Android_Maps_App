@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#dbdbda">
+    <EditText
+        android:paddingTop="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:id="@+id/searching"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="100px"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:id="@+id/myrecyclersearch">
+    </android.support.v7.widget.RecyclerView>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="525px"
+        android:layout_width="match_parent"
+        android:layout_height="425dp"
+        android:id="@+id/myrecyclereventsearch">
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/activitysearch"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+</RelativeLayout>

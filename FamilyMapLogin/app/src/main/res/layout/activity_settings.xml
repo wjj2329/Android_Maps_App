@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/settingsview"
+    tools:context=".activities.SettingsActivity">
+
+    <TextView
+        android:paddingTop="70px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Life Story Lines"
+        android:id="@+id/textView11"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="SHOW LIFESTORY LINES"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/lifestorylines" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Family Tree Lines"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/textView12" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="SHOW TREE LINES"
+        android:id="@+id/textView14"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Spouse Lines"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:layout_alignEnd="@+id/textView14"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="SHOW SPOUSE LINES"
+        android:id="@+id/textView16"
+        android:layout_alignEnd="@+id/textView15"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Map Type"
+        android:id="@+id/textView17"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="BACKGROUND DISPLAY ON MAP"
+        android:id="@+id/textView18"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Re-sync Data"
+        android:id="@+id/resync"
+        android:layout_below="@+id/textView18"
+        android:layout_alignEnd="@+id/textView18"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="FROM FAMILYMAP SERVICE"
+        android:id="@+id/resync2"
+        android:layout_alignEnd="@+id/resync"
+        android:layout_below="@+id/resync"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Logout"
+        android:id="@+id/Logout"
+        android:layout_below="@+id/resync2"
+        android:layout_alignEnd="@+id/resync2"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="RETURNS TO LOGIN SCREEN"
+        android:id="@+id/Logout2"
+        android:layout_alignEnd="@+id/Logout"
+        android:layout_below="@+id/Logout"
+        android:layout_alignParentStart="true" />
+
+    <Switch
+        android:paddingTop="70px"
+        android:paddingLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/lifestory"
+        android:layout_above="@+id/textView13"
+        android:layout_toEndOf="@+id/textView11"
+        android:layout_marginStart="128dp"
+        android:layout_alignTop="@+id/textView11" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/familytree"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_marginStart="62dp"
+        android:layout_alignEnd="@+id/lifestory"
+        android:layout_above="@+id/textView15" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/spouse"
+        android:layout_marginStart="68dp"
+        android:layout_alignEnd="@+id/familytree"
+        android:layout_above="@+id/textView17"
+        android:layout_below="@+id/textView14" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/maptype"
+        android:layout_alignStart="@+id/familytree"
+        android:layout_above="@+id/resync"
+        android:layout_below="@+id/textView16"
+        android:entries="@array/mapstuff"
+       />
+
+    <Spinner
+        android:paddingLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lifestorylines"
+        android:layout_alignBottom="@+id/lifestory"
+        android:layout_alignStart="@+id/familytreelines"
+        android:entries="@array/colors_array"
+        android:layout_alignTop="@+id/textView12" />
+
+    <Spinner
+        android:paddingLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/familytreelines"
+        android:layout_above="@+id/textView15"
+        android:layout_alignTop="@+id/textView13"
+        android:layout_alignStart="@+id/spouselines"
+        android:entries="@array/colors_array" />
+
+    <Spinner
+        android:paddingLeft="50px"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spouselines"
+        android:layout_alignBottom="@+id/spouse"
+        android:layout_toEndOf="@+id/textView15"
+        android:layout_below="@+id/textView14"
+        android:entries="@array/colors_array"/>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/filter"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"/>
+</RelativeLayout>
